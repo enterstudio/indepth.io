@@ -1,1 +1,19 @@
 /* craig.css */
+
+#the-app .et_pb_image {
+  position: absolute;
+  top: 7vh;
+  max-height: 40vh;
+  max-width: 100%;
+  overflow:hidden;
+  display: none;
+  text-align: center;
+}
+
+#the-app .et_pb_image img {
+
+}
+
+#the-app #app-screen-1 {
+  display: block;
+}
