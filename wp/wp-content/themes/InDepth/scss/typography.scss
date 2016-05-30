@@ -1,0 +1,62 @@
+body {
+	font-weight: 300;
+}
+
+h1,h2,h3 {
+	color: $brand-secondary !important;
+}
+
+.et_pb_row {
+    padding: 0 0 3% !important;
+}
+
+h2 + h4 {
+	font-size: 24px;
+}
+
+p {
+
+	&+p {
+		padding-bottom: 1.5em;
+	}	
+}
+
+#id-intro {
+	.header-content {
+		
+		text-align: center;
+		
+		@include desktop {
+			text-align: left;
+		}
+		
+		&:after {
+			content:'';
+			display: block;	
+		}
+	}
+
+	h1 {
+		font-size: 50px;
+		
+		
+		@include tablet {
+			font-size: 60px;
+		}
+		
+		@include desktop {
+			font-size: 70px;
+			max-width: 50%;
+			
+			
+		}
+		@include xl-desktop {
+			font-size: 70px;
+			max-width: 50%;
+			
+			
+		}
+	}	
+	
+	
+}

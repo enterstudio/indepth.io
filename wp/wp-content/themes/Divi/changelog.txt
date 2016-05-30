@@ -1,3 +1,13 @@
+version 2.7.5 ( updated 05-16-2016 )
+- Fixed issue where incorrect margin values were used in the Shop module.
+ 	* epanel/shortcodes/css/shortcodes.css
+- Fixed issue where Slide In header style was closed when an internal link was clicked.
+	* scripts/frontend-builder-global-functions.js
+- Fixed the issue with Page Builder styles, missing for non-admin users
+	* core/init.php
+- Fixed issue that caused menu items to stack in mega menus with more than 5 sub menus.
+	* style.css
+
 version 2.7.4 ( updated 05-10-2016 )
 - "Below posts and  above comments" code integration is now placed in the correct location on post pages.
 	* single.php

@@ -2,7 +2,7 @@
 
 if ( ! defined( 'ET_BUILDER_PRODUCT_VERSION' ) ) {
 	// Note, when this is updated, you must also update corresponding version in builder.js: `window.et_builder_version`
-	define( 'ET_BUILDER_PRODUCT_VERSION', '2.7.4' );
+	define( 'ET_BUILDER_PRODUCT_VERSION', '2.7.5' );
 }
 
 if ( ! defined( 'ET_BUILDER_VERSION' ) ) {

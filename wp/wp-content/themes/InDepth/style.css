@@ -1,0 +1,12 @@
+/*
+Theme Name: InDepth
+Version: 2.7.4
+Description: InDepth teheme
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
+Template: Divi
+*/
+
+@import url("../Divi/style.css");
+@import url("css/style.css")

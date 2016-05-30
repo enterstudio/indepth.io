@@ -1,0 +1,162 @@
+.entry-content {
+	.et_section_regular {
+		
+		border-top: 1px solid rgba(0,0,0,0.05);
+		border-bottom: 1px solid rgba(255,255,255,0.05);
+	
+		&:nth-child(even) {
+			background: #303030 $noise !important;
+			
+		}
+		&:nth-child(odd) {
+			background-image: $noise;
+		}
+	}
+	
+	#welcome.et_section_regular {
+		border: none;
+		
+	}
+}
+
+
+
+#id-intro {
+		@include tablet {
+			
+		
+		}
+		
+		@include desktop {
+			
+			
+			
+			&:after {
+				position:absolute;
+				display: block;
+				content: "";
+				background: transparent url("../images/iPhone-Hand-100.png") no-repeat center center;
+				background-size: cover;
+				width: 700px;
+				bottom: 0px;
+				right: 10%;
+				top:0px;
+				z-index:1;
+			}
+		
+		}
+		
+		@include xl-desktop {
+	
+		}
+}
+
+#intro-images {
+	display:block;
+	position:absolute;
+	top:0px;
+	width:780px;
+	bottom:0px;
+	right:0px;
+	background:transparent;
+	overflow:hidden;
+	z-index:-1;
+
+	
+}
+
+#the-business {
+	.et_pb_team_member_description {
+		
+		h4 {}
+		
+		@include tablet {
+		
+		}
+		
+		@include desktop {
+		}
+		
+		
+		@include xl-desktop {
+		
+			
+		}
+	}
+	.et_pb_team_member_image {
+		@include tablet {
+		
+		}
+		
+		@include desktop {
+		}
+		
+		
+		@include xl-desktop {
+		}
+	}
+	
+}
+
+
+#the-interface {
+		overflow-y: hidden;
+		
+		&:after{
+			content: "";
+			display: block;
+			position: relative;
+			bottom: 0px;
+			margin: 0 auto;
+			top: 20px;
+			left: 20px;
+			right: 20px;
+			height: 400px;
+			width: 400px;
+			background-image: url('../images/Black-iphone-angle.png') !important;
+			background-size: contain;
+			background-repeat: no-repeat;
+		    background-position: bottom left;
+		}
+		
+		@include tablet {
+			&:after{
+				bottom: 40px;
+				position: absolute;
+				left: 5%;
+				top: initial;
+				width: 45%;
+				height: 400px;
+				right: initial;
+				margin: initial;
+			}
+		}
+		
+		@include desktop {
+			
+			&:after{
+				bottom: -50px;
+				position: absolute;
+				left: 5%;
+				top: initial;
+				width: 45%;
+				height: 500px;
+				right: initial;
+				margin: initial;
+			}
+		
+		}
+		
+		
+		@include xl-desktop {
+		
+			&:after{
+				left: 5%;
+				width: 45%;
+				height: 700px;
+					bottom: -80px;
+			}
+			
+		}
+}
+

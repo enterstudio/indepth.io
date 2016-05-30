@@ -1,0 +1,64 @@
+$tablet-width: 768px;
+$desktop-width: 980px;
+$xl-desktop-width: 1200px;
+
+$highlight: rgba(255,255,255,1);
+$active: rgba(255,255,255,1);
+
+$inactive-line: rgba(255,255,255,0.1);
+$inactive-text: rgba(255,255,255,0.6);
+
+$brand-primary : #EA3838; 
+$brand-secondary : #EF5557; 
+
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin xl-desktop {
+  @media (min-width: #{$xl-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+$noise : url('../images/200-50-3-monochrome.png') repeat top left;
+
+@mixin animate-border{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	border-bottom: 2px solid $highlight;
+	transition: 0.4s;
+}
+@mixin animate-border-hover{
+	width: 100%;
+}

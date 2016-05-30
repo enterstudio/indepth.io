@@ -2,7 +2,7 @@ var ET_PageBuilder = ET_PageBuilder || {};
 
 window.wp = window.wp || {};
 
-window.et_builder_version = '2.7.4';
+window.et_builder_version = '2.7.5';
 
 ( function($) {
 	var et_error_modal_shown = window.et_error_modal_shown,

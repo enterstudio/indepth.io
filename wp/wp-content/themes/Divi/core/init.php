@@ -43,6 +43,18 @@ function et_core_setup( $url ) {
 
 	if ( is_admin() ) {
 		require_once( ET_CORE_PATH . 'admin/includes/assets.php' );
+
+		add_action( 'admin_enqueue_scripts', 'et_core_load_main_styles' );
 	}
+}
+endif;
+
+if ( ! function_exists( 'et_core_load_main_styles' ) ) :
+function et_core_load_main_styles( $hook ) {
+	if ( ! in_array( $hook, array( 'post.php', 'post-new.php' ) ) ) {
+		return;
+	}
+
+	wp_enqueue_style( 'et-core-admin' );
 }
 endif;

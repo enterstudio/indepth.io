@@ -1,0 +1,65 @@
+.iphone {
+	display: block;
+	position: relative;
+	background: none url('../images/Apple-iPhone.png') no-repeat 0 0;
+	background-size: contain;
+	
+	.device-iphone {
+		display: block;
+		position: absolute;
+		top: 0;
+	}
+	
+	.slider-screens {
+	
+	}
+}
+
+
+.et_pb_gutters3 .et_pb_column_1_3 .et_pb_module, .et_pb_gutters3.et_pb_row .et_pb_column_1_3 .et_pb_module, .et_section_specialty .et_pb_gutters3.et_pb_row .et_pb_column_1_3 .et_pb_module, .et_section_specialty .et_pb_row .et_pb_column_2_3 .et_pb_gutters3.et_pb_row_inner .et_pb_column_1_3 .et_pb_module {
+
+	&.feature-list {
+		margin-bottom: 2em;
+		min-height:10em;
+		
+		h4 {
+			display: inline-block;	position: relative;
+			margin-bottom: 0.5em;
+			&:before {
+				@include animate-border
+			}
+			
+			font-size:28px;
+		}
+		
+		color: $inactive-text;
+		cursor:pointer;
+		
+		&.active-feature {
+			
+			transition: 1s;		
+			color: $active;
+			
+			h4 {
+				display: inline-block;			
+				&:before {
+					@include animate-border-hover
+				}	
+			}
+		}	
+	
+		@include tablet {
+		}
+		
+		@include desktop {
+		}
+		
+		@include xl-desktop {
+		min-height:12em;
+			margin-bottom: 3em;
+		}
+		
+	}
+}
+
+

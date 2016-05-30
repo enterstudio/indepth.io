@@ -1,0 +1,6 @@
+#the-business .et_pb_team_member_image {
+  overflow: hidden;
+  border-radius: 1.5em; }
+  #the-business .et_pb_team_member_image img {
+    max-width: 3em;
+    height: auto; }
