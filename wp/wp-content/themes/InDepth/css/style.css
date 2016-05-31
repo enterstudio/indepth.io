@@ -16,11 +16,11 @@
 ****************/
 @media (max-width: 768px) and (orientation: portrait) {
   #id-intro {
-    min-height: 150vw !important
+    min-height: 170vw !important
   }
 
   #id-intro .et_pb_fullwidth_header_container {
-    min-height: 150vw !important;
+    min-height: 170vw !important;
   }
 
   #id-intro .et_pb_fullwidth_header_scroll {
@@ -101,6 +101,7 @@
 
   #id-intro .header-image-container img {
     max-height: 80vh;
+    margin-top: 10px;
   }
 }
 
@@ -127,26 +128,19 @@
     z-index: -1;
 }
 
-.iphone {
-    display: block;
-    position: relative;
-    background: none url("../images/Apple-iPhone.png") no-repeat 0 0;
-    background-size: contain;
-}
-
 /*******
  * Map *
  *******/
 #built-with-love {
-  font-size: 3em;
+  font-size: 2em;
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
 }
 
 #from-nz {
   font-size: 1.2em;
   position: absolute;
-  bottom: -20%;
+  bottom: -22%;
   right: 0;
 }
 
@@ -168,8 +162,21 @@
 
   #from-nz {
     font-size: 3em;
+    bottom: -12%;
   }
 }
+
+@media screen and (min-width: 1500px) {
+  #built-with-love {
+    font-size: 7vw;
+  }
+
+  #from-nz {
+    font-size: 3em;
+    bottom: -10%;
+  }
+}
+
 
 
 #the-business {
@@ -256,7 +263,7 @@ p + p {
     #the-interface:after {
         left: 5%;
         width: 45%;
-        height: 900px;
+        height: 800px;
         bottom: -100px;
     }
 }

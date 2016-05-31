@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>indepth inc</title>
+<title>In-depth inc</title>
 <script src="countdown.js"></script>
 <style>
 html, body { margin: 0; padding: 0;}
@@ -23,6 +23,7 @@ h1 {
 	color: white;
 	font-size: 2vw;
 }
+
 #content {
   height: 100vh;
   width: 100%;
@@ -30,6 +31,27 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+  font-size: 12vw;
+  padding: 0 5px;
+  }
+  #email {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  h1 {
+  font-size: 12vw;
+  padding: 0 5px;
+  }
+  #email {
+    font-size: 5vw;
+  }
+}
+
 </style>
 </head>
 <body>

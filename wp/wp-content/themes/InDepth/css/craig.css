@@ -1,7 +1,7 @@
 /* the-app */
 
 #the-app .et_pb_image img {
-  max-height: 55vh;
+  max-height: 70vh;
   width: auto;
 }
 
@@ -33,18 +33,21 @@
 
 
 @media screen and (max-width: 768px) {
-  #the-app .et_pb_column_5 {
-    display: none;
-  }
   .id-pullquote {
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  #the-app .et_pb_column_5 {
+    display: none;
   }
 }
 
 @media screen and (min-width: 980px) {
   #the-app p {
     font-size: 1em;
-    line-height: 1em;
+    line-height: 1.1em;
   }
   #the-app h4 {
       font-size: 1.5em;
@@ -57,11 +60,11 @@
 
 @media screen and (min-width: 1400px) {
   #the-app p {
-    font-size: 1.2em;
-    line-height: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.1em;
   }
   #the-app h4 {
-      font-size: 1.6em;
+      font-size: 1.4em;
       margin-bottom: 0.2em;
   }
 }
@@ -81,7 +84,7 @@
 /* Super wide */
 @media screen and (min-aspect-ratio: 2/1) {
   #the-app .et_pb_image img {
-    max-height: 80vh;
+    max-height: 75vh;
   }
 }
 

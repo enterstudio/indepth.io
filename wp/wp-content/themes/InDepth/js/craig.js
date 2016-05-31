@@ -5,8 +5,8 @@ console.log('craig.js');
     /* The App Screen Shots ----------------------------------------- */
 
     var changeImage = function(index) {
-      $('.app-screen').css({display:'none'});
-      $('#app-screen-'+index).fadeIn();
+      $('.app-screen').hide();
+      $('#app-screen-'+index).show();
     }
 
     $('#feature-1').mouseenter(function() { changeImage(1); });
@@ -36,7 +36,7 @@ console.log('craig.js');
     $('.hexa-hit-area').mouseleave(function(){
       if (!$(this).data('fading-out')){
         $(this).data('fading-out', true)
-        $(this).parents('.hexaHolder').find('.hexa img').fadeTo(300, 0.6, function() {
+        $(this).parents('.hexaHolder').find('.hexa img').fadeTo(2000, 0.6, function() {
           $(this).parents('.hexaHolder').find('.hexa-hit-area').data('fading-out', false)
         });
       }
