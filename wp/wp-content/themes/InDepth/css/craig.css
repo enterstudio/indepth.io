@@ -36,6 +36,9 @@
   #the-app .et_pb_column_5 {
     display: none;
   }
+  .id-pullquote {
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -70,11 +73,74 @@
 /* Special for weird ratios. */
 /* Super wide */
 @media screen and (min-aspect-ratio: 2/1) {
-  #the-app p {
-    font-size: 3vh;
-    font-size: 3vh;
-  }
   #the-app .et_pb_image img {
     max-height: 80vh;
   }
 }
+
+/* Hexagons */
+
+.hexagon-row.et_pb_section {
+  height: 30.2vw;
+  overflow: hidden;
+  border-top: 2px solid #626262;
+  border-bottom: 2px solid #626262;
+}
+
+.hexagon-row .et_pb_row {
+  width: 100%;
+}
+
+.hexaHolder{
+    height: 20vw;
+    width: 25vw;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hexa img{
+    width:100%;
+    margin-top: -5px;
+}
+.hexa, .hexa div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+}
+.hexa {
+    text-align: center;
+    margin: 0;
+    height: 20vw;
+    width: 25vw;
+}
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
+
+.hex-row {
+    clear: left;
+}
+
+.hex-row-1 .hexaHolder { top: -10.1vw; }
+.hex-row-2 .hexaHolder { top: 0 ; }
+.hex-row-3 .hexaHolder { top: 10.1vw ; }
+.hex-row-4 .hexaHolder { top: 20.2vw ; }
+
+.hex-row-1 .hexaHolder[data-col="1"], .hex-row-3 .hexaHolder[data-col="1"] { left: 10.5vw; }
+.hex-row-1 .hexaHolder[data-col="2"], .hex-row-3 .hexaHolder[data-col="2"] { left: 45.5vw; }
+.hex-row-1 .hexaHolder[data-col="3"], .hex-row-3 .hexaHolder[data-col="3"] { left: 80.5vw; }
+
+.hex-row-2 .hexaHolder[data-col="1"], .hex-row-4 .hexaHolder[data-col="1"] { left: -7vw; }
+.hex-row-2 .hexaHolder[data-col="2"], .hex-row-4 .hexaHolder[data-col="2"] { left: 28vw; }
+.hex-row-2 .hexaHolder[data-col="3"], .hex-row-4 .hexaHolder[data-col="3"] { left: 63vw; }
