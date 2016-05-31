@@ -1,19 +1,72 @@
-/* craig.css */
-
-#the-app .et_pb_image {
-  position: absolute;
-  top: 7vh;
-  max-height: 40vh;
-  max-width: 100%;
-  overflow:hidden;
-  display: none;
-  text-align: center;
-}
+/* the-app */
 
 #the-app .et_pb_image img {
+  max-height: 55vh;
+  width: auto;
+}
 
+#the-app .app-screen {
+  display: none;
 }
 
 #the-app #app-screen-1 {
   display: block;
+}
+
+#the-app .et_pb_column_5 {
+    text-align: center;
+}
+
+#the-app .feature-list {
+    margin-bottom: 2vh;
+    min-height: 1px;
+}
+#the-app .et_pb_row {
+    width: 90%;
+}
+
+#the-app h4 {
+    font-size: 4vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 769px) {
+  #the-app p {
+    font-size: 1.5vh;
+    line-height: 2.2vh;
+  }
+  #the-app h4 {
+      font-size: 3vh;
+      margin-bottom: 0.2em;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #mobile-feat-gallery {
+    display: none;
+  }
+}
+
+#the-app .et_pb_gallery_item {
+  width: 12% !important;
+  margin: 0 2% !important;
+  clear: none;
+}
+
+#the-app .et_pb_gallery_title,
+#the-app .et_pb_gallery_caption  {
+  display: none;
+}
+
+/* Special for weird ratios. */
+/* Super wide */
+@media screen and (min-aspect-ratio: 2/1) {
+  #the-app p {
+    font-size: 3vh;
+    font-size: 3vh;
+  }
+  #the-app .device-iphone {
+    max-height: 80vh;
+  }
 }
