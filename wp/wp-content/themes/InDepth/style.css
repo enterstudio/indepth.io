@@ -1,6 +1,6 @@
 /*
 Theme Name: InDepth
-Version: 2.7.4
+Version: 2.7.5
 Description: InDepth teheme
 Author: Elegant Themes
 Author URI: http://www.elegantthemes.com
@@ -9,4 +9,6 @@ Template: Divi
 */
 
 @import url("../Divi/style.css");
-@import url("css/style.css")
+@import url("css/style.css");
+@import url("css/craig.css");
+@import url("css/rowan.css");

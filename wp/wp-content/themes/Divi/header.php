@@ -31,10 +31,7 @@
 	</script>
 
 	<?php wp_head(); ?>
-	<script src="<?php echo esc_url( $template_directory_uri . '/js/craig.js' ); ?>" type="text/javascript"></script>
-	<script src="<?php echo esc_url( $template_directory_uri . '/js/rowan.js' ); ?>" type="text/javascript"></script>
-	<link rel="stylesheet" href="<?php echo esc_url( $template_directory_uri . '/css/craig.css' ); ?>" />
-	<link rel="stylesheet" href="<?php echo esc_url( $template_directory_uri . '/css/rowan.css' ); ?>" />
+	
 </head>
 <body <?php body_class(); ?>>
 	<div id="page-container">

@@ -1,6 +1,6 @@
+console.log('craig.js');
 (function($){
   $(document).ready( function(){
-
     var changeImage = function(index) {
       $('.app-screen').css({display:'none'});
       $('#app-screen-'+index).fadeIn();
