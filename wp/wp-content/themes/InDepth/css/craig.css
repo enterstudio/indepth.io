@@ -44,7 +44,7 @@
 @media screen and (min-width: 980px) {
   #the-app p {
     font-size: 1em;
-    line-height: 1em;  
+    line-height: 1em;
   }
   #the-app h4 {
       font-size: 1.5em;
@@ -58,7 +58,7 @@
 @media screen and (min-width: 1400px) {
   #the-app p {
     font-size: 1.2em;
-    line-height: 1.2em;  
+    line-height: 1.2em;
   }
   #the-app h4 {
       font-size: 1.6em;
@@ -90,15 +90,15 @@
 .hexagon-row.et_pb_section {
   height: 30.2vw;
   overflow: hidden;
-  border-top: 2px solid #626262;
-  border-bottom: 2px solid #626262;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .hexagon-row .et_pb_row {
   width: 100%;
 }
 
-.hexaHolder{
+.hexaHolder {
     height: 20vw;
     width: 25vw;
     float: left;
@@ -106,9 +106,21 @@
     left: 0;
     top: 0;
 }
+
+.hexa-hit-area {
+  width: 15vw;
+  height: 14vw;
+  position: absolute;
+  display: block;
+  top: 3vw;
+  left: 5vw;
+  z-index: 100;
+}
+
 .hexa img{
     width:100%;
     margin-top: -5px;
+    opacity: 0.6;
 }
 .hexa, .hexa div {
     margin: 0 auto;
