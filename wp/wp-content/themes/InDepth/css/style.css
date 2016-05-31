@@ -65,8 +65,8 @@
   }
 }
 #id-intro h1 {
-    font-size: 4vw;
-    line-height: 4vw;
+    font-size: 6vw;
+    line-height: 6vw;
 }
 #id-intro .et_pb_fullwidth_header_subhead {
     font-size: 10vw;
@@ -138,55 +138,51 @@
  * Map *
  *******/
 #built-with-love {
-  font-size: 5vw;
-  line-height: 5vw;
-  margin-top: -2vw;
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
 }
 
 #from-nz {
-  font-size: 3vw;
-  line-height: 3vw;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: -20%;
+  right: 0;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 500px) {
   #built-with-love {
-    font-size: 7vw;
-    display: inline-block;
-    margin-top: 10vw;
+    font-size: 4em;
   }
 
   #from-nz {
-    font-size: 4vw;
-    padding-top: 3vw;
-    text-align: right;
+    font-size: 2.3em;
+    bottom: -15%;
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   #built-with-love {
-    font-size: 6vw;
-    display: inline-block;
-    margin-top: 3vw;
+    font-size: 5em;
   }
 
   #from-nz {
-    font-size: 4vw;
-    padding-top: 5vw;
-    text-align: center;
+    font-size: 3em;
   }
 }
+
 
 #the-business {
     /*  .et_pb_team_member_image {
     overflow:hidden;
     border-radius:100px;  max-width:200px;
-
-
+    
+    
       img {
         max-width:200px;
         height:auto;
         width:100%;
-
+        
       }
     }*/
 }
@@ -219,7 +215,7 @@ p + p {
 .entry-content #welcome.et_section_regular {
     border: none;
 }
-#the-interface {}
+#the-interface {} 
 
 #the-interface:after {
     content: "";

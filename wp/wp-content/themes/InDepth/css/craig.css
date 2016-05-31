@@ -26,7 +26,7 @@
 }
 
 #the-app h4 {
-    font-size: 4vw;
+    font-size: 1.5em;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -38,21 +38,28 @@
   }
 }
 
-@media screen and (min-width: 769px) {
-
+@media screen and (min-width: 980px) {
   #the-app p {
-    font-size: 1.5vh;
-    line-height: 2.2vh;
+    font-size: 1em;
+    line-height: 1em;  
   }
   #the-app h4 {
-      font-size: 3vh;
+      font-size: 1.5em;
       margin-bottom: 0.2em;
+  }
+  #mobile-feat-gallery {
+    display: none;
   }
 }
 
-@media screen and (min-width: 980px) {
-  #mobile-feat-gallery {
-    display: none;
+@media screen and (min-width: 1400px) {
+  #the-app p {
+    font-size: 1.2em;
+    line-height: 1.2em;  
+  }
+  #the-app h4 {
+      font-size: 1.6em;
+      margin-bottom: 0.2em;
   }
 }
 
@@ -70,10 +77,6 @@
 /* Special for weird ratios. */
 /* Super wide */
 @media screen and (min-aspect-ratio: 2/1) {
-  #the-app p {
-    font-size: 3vh;
-    font-size: 3vh;
-  }
   #the-app .et_pb_image img {
     max-height: 80vh;
   }
