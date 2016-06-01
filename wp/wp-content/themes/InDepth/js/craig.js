@@ -25,21 +25,27 @@ console.log('craig.js');
     /* Hexagon Hovers ----------------------------------------------- */
 
     $('.hexa-hit-area').mouseenter(function(){
-      if (!$(this).data('fading-in')){
-        $(this).data('fading-in',true)
-        $(this).parents('.hexaHolder').find('.hexa img').fadeTo(300, 1, function() {
-          $(this).parents('.hexaHolder').find('.hexa-hit-area').data('fading-in', false)
+      var hitBox = this;
+      if (!$(hitBox).data('fading-in')){
+        $(hitBox).data('fading-in', true)
+        $(hitBox).parents('.hexaHolder').find('.hexa img').fadeTo(300, 1, function() {
+          $(hitBox).data('fading-in', false)
         });
       }
     });
 
+    // $('.hexa-hit-area').mouseleave(function(){
+    //   if (!$(this).data('fading-out')){
+    //     $(this).data('fading-out', true)
+    //     $(this).parents('.hexaHolder').find('.hexa img').fadeTo(1000, 0.6, function() {
+    //       $(this).parents('.hexaHolder').find('.hexa-hit-area').data('fading-out', false)
+    //     });
+    //   }
+    // });
+
+
     $('.hexa-hit-area').mouseleave(function(){
-      if (!$(this).data('fading-out')){
-        $(this).data('fading-out', true)
-        $(this).parents('.hexaHolder').find('.hexa img').fadeTo(2000, 0.6, function() {
-          $(this).parents('.hexaHolder').find('.hexa-hit-area').data('fading-out', false)
-        });
-      }
+        $(this).parents('.hexaHolder').find('.hexa img').fadeTo(1000, 0.6);
     });
 
   });

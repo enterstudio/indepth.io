@@ -128,30 +128,48 @@
     z-index: -1;
 }
 
+/****************
+ * Why in-depth *
+ ****************/
+
+ #why-indepth {
+   box-shadow: inset 9px 9px 18px -8px rgba(0,0,0,0.75), inset -9px -9px 18px -8px rgba(0,0,0,0.75);
+ }
+
 /*******
  * Map *
  *******/
 #built-with-love {
   font-size: 2em;
   position: absolute;
-  bottom: 5%;
+  bottom: 35px;
 }
 
 #from-nz {
-  font-size: 1.2em;
+  font-size: 1.4em;
   position: absolute;
-  bottom: -22%;
-  right: 0;
+  bottom: 10px;
+  left: 4em;
 }
 
-@media screen and (min-width: 500px) {
+#love-nz {
+  height: 80vw;
+}
+
+
+
+@media screen and (min-width: 600px) {
   #built-with-love {
     font-size: 4em;
+    bottom: 50px;
   }
 
   #from-nz {
     font-size: 2.3em;
-    bottom: -15%;
+  }
+
+  #love-nz {
+    height: 50vw;
   }
 }
 
@@ -162,42 +180,25 @@
 
   #from-nz {
     font-size: 3em;
-    bottom: -12%;
+    bottom: 20px;
+  }
+  #love-nz {
+    height: 35vw;
   }
 }
 
 @media screen and (min-width: 1500px) {
   #built-with-love {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
   #from-nz {
     font-size: 3em;
-    bottom: -10%;
   }
 }
 
 
 
-#the-business {
-    /*  .et_pb_team_member_image {
-    overflow:hidden;
-    border-radius:100px;  max-width:200px;
-    
-    
-      img {
-        max-width:200px;
-        height:auto;
-        width:100%;
-        
-      }
-    }*/
-}
-#the-business .et_pb_team_member_image {
-    width: 200px;
-    border-radius: 5px;
-    overflow: hidden;
-}
 body {
     font-weight: 300;
 }
@@ -272,7 +273,42 @@ p + p {
 /****************
  * Get in touch *
  ****************/
+#the-business {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  border-bottom: 0;
+}
 
+#museum-top {
+  background-size: 100%;
+  height: 10vw;
+  background-position-y: 100%;
+  background-position-x: -15px;
+  background-repeat: no-repeat;
+}
+
+#museum-bottom {
+  background-size: 100%;
+  background-position-y: 0;
+  background-position-x: -15px;
+  background-repeat: no-repeat;
+}
+
+#get-in-touch {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: 0;
+}
+
+#the-business .et_pb_team_member_image {
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#get-in-touch-old {
+  display: none;
+}
 
 /*********
  * FIXES *
@@ -302,6 +338,8 @@ p + p {
   text-decoration: underline;
   cursor: pointer;
   transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+
 }
 .mobile_read_more_text:hover {
   color: #FFFFFF;
@@ -355,12 +393,14 @@ p + p {
       width: 0%;
       border-bottom: 2px solid white;
       transition: 0.4s;
+      -webkit-transition: 0.4s;
   }
   .et_pb_gutters3 .et_pb_column_1_3 .et_pb_module.feature-list.active-feature,
   .et_pb_gutters3.et_pb_row .et_pb_column_1_3 .et_pb_module.feature-list.active-feature,
   .et_section_specialty .et_pb_gutters3.et_pb_row .et_pb_column_1_3 .et_pb_module.feature-list.active-feature,
   .et_section_specialty .et_pb_row .et_pb_column_2_3 .et_pb_gutters3.et_pb_row_inner .et_pb_column_1_3 .et_pb_module.feature-list.active-feature {
       transition: 1s;
+      -webkit-transition: 0.4s;
       color: white;
   }
   .et_pb_gutters3 .et_pb_column_1_3 .et_pb_module.feature-list.active-feature h4,
