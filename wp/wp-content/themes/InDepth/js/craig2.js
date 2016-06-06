@@ -19,7 +19,7 @@
     var startSlideshow
 
     var startNewSlideShow = function () {
-      startSlideshow = setInterval(function(){changeImage(currentImage + 1)}, 7000)
+      startSlideshow = setInterval(function(){changeImage(currentImage + 1)}, 1000)
     }
 
     startNewSlideShow()

@@ -94,22 +94,19 @@
 
 @media (min-width: 769px) {
   #id-intro .header-image-container {
-    width: 90%;
+    width: 50%;
     margin-left: -20vw;
     margin-bottom: -10px;
   }
 
   #id-intro .header-image-container img {
-    max-height: 80vh;
-    margin-top: 10px;
+    max-height: 90vh;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: 1500px) {
   #id-intro .header-image-container {
-    position: absolute;
-    left: -10vw;
-    bottom: -10px;
     width: 50%;
     margin-left: 0;
     margin-bottom: 0;
@@ -128,6 +125,10 @@
     z-index: -1;
 }
 
+.scroll-down {
+  display: none;
+}
+
 /****************
  * Why in-depth *
  ****************/
@@ -137,19 +138,19 @@
  }
 
 /*******
- * Map *
+ * With love *
  *******/
 #built-with-love {
   font-size: 2em;
   position: absolute;
-  bottom: 35px;
+  bottom: 40px;
 }
 
 #from-nz {
   font-size: 1.4em;
   position: absolute;
   bottom: 10px;
-  left: 4em;
+  left: 3.2em;
 }
 
 #love-nz {
@@ -161,11 +162,12 @@
 @media screen and (min-width: 600px) {
   #built-with-love {
     font-size: 4em;
-    bottom: 50px;
+    bottom: 80px;
   }
 
   #from-nz {
     font-size: 2.3em;
+    left: 4em;
   }
 
   #love-nz {
@@ -190,10 +192,16 @@
 @media screen and (min-width: 1500px) {
   #built-with-love {
     font-size: 6vw;
+    bottom: 100px;
   }
 
   #from-nz {
     font-size: 3em;
+    left: 13.5vw;
+  }
+
+  #love-nz {
+  height: 30vw;
   }
 }
 
@@ -250,13 +258,16 @@ p + p {
 }
 @media (min-width: 980px) {
     #the-interface:after {
-        bottom: -40px;
+        bottom: -10%;
         position: absolute;
-        left: 5%;
+        left: 3%;
+        top: auto;
         top: initial;
         width: 45%;
         height: 700px;
+        right: auto;
         right: initial;
+        margin: auto;
         margin: initial;
     }
 }
@@ -292,6 +303,21 @@ p + p {
   background-position-y: 0;
   background-position-x: -15px;
   background-repeat: no-repeat;
+}
+
+#museum-bottom-hr {
+  height: 33vw;
+  max-height: 500px;
+}
+
+#museum-bottom .et_pb_divider_0 {
+  max-height: 500px;
+}
+
+@media screen and (min-width: 1800px) {
+  #museum-bottom-hr {
+  height: 25vw;
+  }
 }
 
 #get-in-touch {
@@ -349,6 +375,7 @@ p + p {
     display: none;
   }
 .mobile_read_more_container_show {
+    display: block;
     display: initial;
   }
 }
